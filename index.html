@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ahmmedur Razee</title>
+<meta name="description" content="Ahmmedur Razee is a computer science student at NYU Abu Dhabi working on AI safety, machine learning and language models.">
+<meta name="theme-color" content="#080a1c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23050914'/%3E%3Cpath d='M7 26 15 6h2l8 20M11 18h10' fill='none' stroke='%2339c8ff' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/site.css">
+<noscript><style>.loader{display:none}.fallback{display:block!important}#world{display:none}.rv{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#research">Skip to research</a>
+<div class="loader" id="loader" aria-hidden="true"><b id="loadPct">00</b></div>
+<canvas id="world" aria-hidden="true"></canvas>
+<div class="fallback" aria-hidden="true"></div>
+
+<header class="hud">
+  <a class="mark" href="#top" aria-label="Back to top">A<span>/</span>R</a>
+  <nav id="nav" aria-label="Primary">
+    <a href="#research">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <a href="assets/Ahmmedur-Razee-Resume.pdf" download="Ahmmedur-Razee-Resume.pdf">Resume</a>
+  </nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+<div class="progress" aria-hidden="true"><i id="rRail"></i></div>
+
+<main>
+  <section class="hero" id="top" data-t="0">
+    <div class="hero-copy">
+      <p class="caption">Welcome to the ErazeedVerse<i class="caret"></i></p>
+      <h1><span data-speed=".08">Ahmmedur</span><span data-speed="-.05">Razee</span></h1>
+      <div class="bio"><p class="path">cat about.md</p><p class="lede">I'm Ahmmedur Razee, a Computer Science major with a minor in Applied Mathematics at NYU Abu Dhabi. My research focuses on <em>LLM safety and alignment</em>, from red-teaming models with reinforcement learning to training AI that stays <em>truthful</em> when people need support. I like turning mathematical ideas into intelligent systems that hold up in the real world.</p></div>
+      <div class="resume-actions"><a class="resume-btn" href="assets/Ahmmedur-Razee-Resume.pdf" download="Ahmmedur-Razee-Resume.pdf">Download resume</a></div>
+    </div>
+    <figure class="portrait"><img src="assets/img/portrait.jpg" alt="Ahmmedur Razee standing on a snowy New York street" width="825" height="979"></figure>
+    <a class="down" href="#research">Scroll</a>
+  </section>
+
+  <div class="pass"><p class="caption big" data-speed=".16">Entering Research Experience</p><p class="cmd">cd ./research &amp;&amp; ls</p></div>
+
+  <section class="sheet" id="research" data-t=".31">
+    <p class="path">~/research</p><h2 aria-label="Research"><span class="br">&lt;</span>Research<span class="br"> /&gt;</span></h2>
+    <article class="capstone">
+      <div class="lab-head">
+        <div><span class="kicker">Social Machines &amp; Robotics (SMART) Lab, NYU Abu Dhabi</span>
+        <h3>Supportive but Truthful</h3>
+        <p class="cap-sub">Senior capstone on sycophancy in emotional-support AI</p></div>
+        <p class="lab-meta">Research Assistant<br>PI: Prof. Dr. Hanan Salam<br><span>Jan 2026 to present</span></p>
+      </div>
+      <div class="cap-body">
+        <div>
+          <p>Emotional-support chatbots are often trained with reinforcement learning to improve a user's mood. I show that this can teach them to agree with false medical beliefs, and I designed a belief-grounded reward that also moves users toward the doctor-verified truth.</p>
+          <div class="equation" aria-label="Reward equals alpha times change in mood, plus lambda times change in belief, minus beta times unsafe"><span>R =</span><span class="eq-a">&alpha; &Delta;mood</span><span>+</span><span class="eq-b">&lambda; &Delta;belief</span><span>&minus;</span><span class="eq-c">&beta; unsafe</span></div>
+          <dl class="cap-stats three">
+            <div><dt>+22.5</dt><dd>points more users believing the truth</dd></div>
+            <div><dt>&minus;28.6</dt><dd>points less agreement with myths</dd></div>
+            <div><dt>0.0</dt><dd>points of mood lost</dd></div>
+          </dl>
+        </div>
+        <figure class="plate" data-plate="drift" data-file="capstone_results.py"></figure>
+      </div>
+      <p class="cap-foot">Compared with mood-only RL. Results from my current preprint draft and may change.</p>
+    </article>
+    <div class="panels two">
+      <article class="panel">
+        <span class="kicker">eBRAIN Lab, NYU Abu Dhabi</span>
+        <h3>LLM Safety and Red Teaming</h3>
+        <p class="lab-meta">Research Assistant / PI: Prof. Dr. Muhammad Shafique<br><span>Dec 2025 to present</span></p>
+        <p>I study how safety-aligned language models hold up against adversaries that adapt.</p>
+        <p class="proj"><b>RLVR-MetaCipher.</b> Developing a new jailbreak method using MetaCipher and reinforcement learning from verifiable rewards (RLVR), to evaluate robustness across open-weight and commercial LLMs.</p>
+        <p class="proj"><b>RECONVENE.</b> Building a safety monitor for multi-agent LLM systems, focused on harmful goals that are distributed across agents.</p>
+      </article>
+      <article class="panel">
+        <span class="kicker">S.M.A.R.T. Construction Research Lab, NYU Abu Dhabi</span>
+        <h3>Construction Safety Monitoring</h3>
+        <p class="lab-meta">Research Assistant / PI: Prof. Dr. Borja Garc&iacute;a de Soto<br><span>Jan 2026 to Mar 2026</span></p>
+        <p>Worked on the n8n workflow of a safety monitoring system for electrical construction, connecting sensor inputs, risk logic, automated flagging and alerts so that potential hazards reach the right people.</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="pass right"><p class="caption big" data-speed="-.14">Out the back wall</p><p class="cmd">git log --author="ahmmed"</p></div>
+
+  <section class="sheet narrow" id="experience" data-t=".47">
+    <p class="path">~/experience</p><h2 aria-label="Experience"><span class="br">&lt;</span>Experience<span class="br"> /&gt;</span></h2>
+    <article class="job">
+      <div><img class="co-logo" src="assets/logos/botim.png" alt="Botim logo" width="150" height="42"><h3>AstraTech (Botim, G42)</h3><p class="role">AI Engineering Intern</p><p class="when">July 2026 to Sept 2026</p></div>
+      <p>Built AI agent infrastructure and tested the reliability of customer-facing AI systems, working with FastAPI, MCP and LLM evaluation.</p>
+    </article>
+    <article class="job">
+      <div><h3>NYU Abu Dhabi iGEM</h3><p class="role">Wiki Developer &amp; Graphic Design</p><p class="when">Dec 2025 to present</p></div>
+      <div><p class="medal">Won Gold Medal at iGEM 2026</p>
+      <p>Built the team's wiki and interactive visualizations for DuneLock, a synthetic biology project that uses engineered microbes to stabilize desert sand. Designed graphics that make the science, models and results clear to an international audience.</p>
+      <a class="link" href="https://2026.igem.wiki/nyu-abu-dhabi/" rel="noopener">View our iGEM website</a></div>
+    </article>
+    <article class="job">
+      <div><h3>HackED, NYU Abu Dhabi</h3><p class="role">Vice President</p><p class="when">Sept 2026 to present</p></div>
+      <p>Leading HackED's strategic initiatives by organizing technical workshops, hackathons and community programs that promote innovation, collaboration and entrepreneurship across the NYU Abu Dhabi community.</p>
+    </article>
+    <article class="job">
+      <div><h3>NYU Abu Dhabi Library</h3><p class="role">Design and Wayfinding Student Assistant</p><p class="when">Sept 2026 to present</p></div>
+      <p>Creating visual communication and wayfinding materials that help patrons navigate library spaces and discover its services, combining clear information design with the needs of everyday visitors.</p>
+    </article>
+    <article class="job">
+      <div><h3>Bangladesh Student Association</h3><p class="role">President, NYU Abu Dhabi</p></div>
+      <p>Leading the association's cultural, social and sports programming, coordinating logistics and bringing students, faculty and staff together around Bangladeshi culture and community.</p>
+    </article>
+    <article class="job">
+      <div><h3>Community Based Global Learning</h3><p class="role">Local Education Officer, NYU Abu Dhabi</p><p class="when">May 2025 to June 2025</p></div>
+      <p>Coordinated field visit logistics, transportation and itineraries for community-based learning programs, keeping students, faculty and local partners aligned throughout each visit.</p>
+    </article>
+  </section>
+
+  <div class="pass"><p class="caption big" data-speed=".14">Street level</p><p class="cmd">python run_projects.py</p></div>
+
+  <section class="sheet" id="projects" data-t=".62">
+    <p class="path">~/projects</p><h2 aria-label="Projects"><span class="br">&lt;</span>Projects<span class="br"> /&gt;</span></h2>
+    <div class="build-grid">
+      <article class="build wide">
+        <figure class="plate" data-plate="mri" data-file="ML_Course_Project_Combined.ipynb"></figure>
+        <div><span class="kicker">Medical imaging</span><h3>Brain Tumor MRI Classification</h3>
+        <p>Benchmarked AlexNet, ResNet-18, Vision Transformer and LeNet across 6,000+ MRI images, with transfer learning, ablation studies and Grad-CAM analysis.</p>
+        <p class="kpi"><b>99.2%</b> test accuracy, fine-tuned ResNet-18</p>
+        <figure class="plate bench" data-plate="bench" data-file="model_benchmark.csv"></figure>
+        <a class="link" href="https://github.com/ErazeerHead04/Brain-Cancer-MRI-Classification-using-Deep-Learning-" rel="noopener">Source</a></div>
+      </article>
+      <article class="build wide rev">
+        <figure class="plate" data-plate="f1" data-file="F1_Strategy_App.ipynb"></figure>
+        <div><span class="kicker">Motorsport analytics</span><h3>F1 Pitstop Strategy</h3>
+        <p>Combines historical race data, live weather and track geolocation to recommend pit strategies and benchmark them against past seasons.</p>
+        <p class="kpi"><b>FastF1</b> + Open-Meteo + pandas</p>
+        <a class="link" href="https://github.com/ErazeerHead04/F1-Pitstop-Strategy-App" rel="noopener">Source</a></div>
+      </article>
+      <article class="build wide">
+        <figure class="plate" data-plate="park" data-file="parksmart_map.js"></figure>
+        <div><span class="kicker">Maps and live data</span><h3>ParkSmart NYC</h3>
+        <p>An interactive parking finder for New York built on OpenStreetMap. Search any neighborhood and see nearby parking within a set radius.</p>
+        <a class="link" href="https://github.com/ErazeerHead04/ParkSmart-NYC" rel="noopener">Source</a></div>
+      </article>
+      <article class="build">
+        <figure class="plate" data-plate="auction" data-file="live_auction.py"></figure>
+        <span class="kicker">Team project / AI systems</span><h3>EstateBid</h3>
+        <p>An AI-native estate auction platform with bulk ingestion, real-time bidding and an agent pipeline combining live eBay pricing with LLM market comps.</p>
+        <a class="link" href="https://github.com/ErazeerHead04/EstateBid" rel="noopener">Source</a>
+      </article>
+      <article class="build">
+        <figure class="plate" data-plate="trip" data-file="trip_planner.jsx"></figure>
+        <span class="kicker">Team project / Full stack</span><h3>TripMate</h3>
+        <p>A travel planner that brings itineraries, maps, budgets and weather forecasts into one place.</p>
+        <a class="link" href="https://github.com/ErazeerHead04/TripMate" rel="noopener">Source</a>
+      </article>
+      <article class="build">
+        <figure class="plate" data-plate="neuro" data-file="cnn_from_scratch.py"></figure>
+        <span class="kicker">Deep learning</span><h3>NeuroForge</h3>
+        <p>A CNN framework with hand-derived backpropagation and no autograd, plus a ResNet-18 fine-tuning pipeline on EMNIST reaching 87% test accuracy.</p>
+        <a class="link" href="https://github.com/ErazeerHead04/NeuroForge" rel="noopener">Source</a>
+      </article>
+      <article class="build">
+        <figure class="plate" data-plate="match" data-file="bipartite.py"></figure>
+        <span class="kicker">Computer vision</span><h3>Bipartite Object Matching</h3>
+        <p>Matches objects across VIRAT surveillance frames with the Hungarian algorithm, using a cost built from IoU and centroid distance.</p>
+        <a class="link" href="https://github.com/ErazeerHead04/Bipartite-Object-Matching-on-VIRAT-Surveillance-Frames" rel="noopener">Source</a>
+      </article>
+      <article class="build">
+        <figure class="plate" data-plate="stats" data-file="effect_size.ipynb"></figure>
+        <span class="kicker">Data science</span><h3>RateMyProfessor Analysis</h3>
+        <p>Statistical inference and predictive modeling on large-scale RateMyProfessor data, testing for gender bias with confidence intervals and effect sizes.</p>
+        <a class="link" href="https://github.com/ErazeerHead04/RateMyProfessor-Data-Science-Capstone" rel="noopener">Source</a>
+      </article>
+      <article class="build slim">
+        <span class="kicker">Data engineering</span><h3>NYUAD Course Scraper</h3>
+        <p>Structures about 1,800 catalog courses from a hidden XML API into a clean dataset.</p>
+        <a class="link" href="https://github.com/ErazeerHead04/NYUAD-Course-Scraper" rel="noopener">Source</a>
+      </article>
+    </div>
+    <div class="activity">
+      <p class="path">git log --stat --since=2026</p>
+      <h3>Code activity</h3>
+      <div class="activity-grid">
+        <figure class="plate scroll-x" data-plate="heat" data-file="contributions_2026.json"></figure>
+        <figure class="plate" data-plate="langs" data-file="repos_by_language.json"></figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="pass right dive"><p class="caption big" data-speed="-.16">Below the surface</p><p class="cmd">sudo dive --to ./education</p></div>
+
+  <section class="sheet" id="education" data-t=".8">
+    <p class="path">~/education</p><h2 aria-label="Education"><span class="br">&lt;</span>Education<span class="br"> /&gt;</span></h2>
+    <div class="edu-top">
+      <div class="globe-wrap"><canvas id="globe" width="720" height="720" role="img" aria-label="Globe showing the route from Abu Dhabi to Paris to New York and back to Abu Dhabi"></canvas><p class="leg" id="leg" aria-live="polite"></p></div>
+      <div>
+        <h3 class="degree">New York University Abu Dhabi</h3>
+        <p class="role">Bachelor of Science in Computer Science, Minor in Applied Mathematics</p>
+        <p class="when">Aug 2023 to May 2027</p>
+        <ol class="route" id="route"></ol>
+      </div>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Courses by campus" id="tabs"></div>
+    <div class="course-panel" id="courses" role="tabpanel"></div>
+    <h3 class="tools-title">Tools</h3>
+    <div id="tools"></div>
+  </section>
+
+  <section class="contact" id="contact" data-t="1">
+    <p class="path">~/contact</p><h2 aria-label="Contact"><span class="br">&lt;</span>Contact<span class="br"> /&gt;</span></h2>
+    <div class="links">
+      <a href="mailto:ahmmed.razee@nyu.edu">ahmmed.razee@nyu.edu</a>
+      <a href="https://www.linkedin.com/in/ahmmed-razee04/" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ErazeerHead04" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/erazeed.frames/" rel="noopener">Photography</a>
+      <a href="https://www.behance.net/gallery/131166313/My-Works" rel="noopener">Design</a>
+      <a href="assets/Ahmmedur-Razee-Resume.pdf" download="Ahmmedur-Razee-Resume.pdf">Download resume</a>
+    </div>
+    <footer>&copy; 2026 Ahmmedur Razee</footer>
+  </section>
+</main>
+<script>setTimeout(function(){var l=document.getElementById('loader');if(l)l.remove()},6000)</script>
+<script defer src="js/bundle.js"></script>
+</body>
+</html>
